@@ -1,0 +1,27 @@
+<header>
+  <h1>Create New Account</h1>
+</header>
+<div class="">
+  <div class="">
+    <form action="/users" method="post">
+      <input name="firstname" placeholder="First Name">
+      <input name="lastname" placeholder="Last Name">
+      <input name="email" placeholder="Email Address">
+      <input name="password" placeholder="Password" type="password">
+      <input name="password_confirm" placeholder="Confirm Password" type="password">
+      <button>Submit</button>
+    </form>
+    <% if @error %>
+    <p><%= @error %></p>
+    <% end %>
+  </div>
+</div>
+<div class="">
+  <div class="">
+    <form action="/">
+      <button>
+        Return To Log In
+      </button>
+    </form>
+  </div>
+</div>

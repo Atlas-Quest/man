@@ -1,1 +1,30 @@
-<h1>hello world</h1>
+<h1>
+  Man
+</h1>
+<div>
+  <div>
+    <form action="/session" method="post">
+      <input name="email" placeholder="Email Address">
+      <input name="password" placeholder="Password" type="password">
+      <button>
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>
+<div>
+  <div>
+    <% if @error %>
+    <p><%= @error %></p>
+    <% end %>
+  </div>
+</div>
+<div">
+  <div>
+    <form action="/users/new">
+      <button>
+        Sign up
+      </button>
+    </form>
+  </div>
+</div>
